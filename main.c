@@ -16,7 +16,6 @@ int items[10] = {6, 9, 3, 7, 23, 20, 2, 1, 53, 4};
 
 
 int BubbleSort(int *arr, int count){
-
 	for(int i = 0; i < (count-1); i++){
 		for(int j = 0; j < (count - i-1); j++){
 			if(*(arr + j) > *(arr + j + 1)){
@@ -54,10 +53,13 @@ int main(void){
 	BubbleSort(array, ListCount);
 
 	printf("Bubble-sorted list:\n");
-		for(int i = 0; i < 10; i++){
-			printf("%d ", array[i]);
-		}
-		printf("\n");
+	for(int i = 0; i < 10; i++){
+		printf("%d ", array[i]);
+	}
+	printf("\n");
+	free(array);
+
+	printf(" Update.");
 
 
 	return 0;
