@@ -59,7 +59,7 @@ int main(void){
 	printf("\n");
 	free(array);
 
-	printf(" Update.");
+	printf("another Update.");
 
 
 	return 0;
